@@ -14,13 +14,9 @@
         $scope.message = "Please enter data first";
         $scope.color = "red";
       }
-      else if(listOfItems.length > 0 && listOfItems.length < 4){
-        $scope.message = "Enjoy!";
-        $scope.color = "green";
-      }
       else {
-        $scope.message = "Too much!";
         $scope.color = "green";
+        (listOfItems.length > 0 && listOfItems.length < 4) ? $scope.message = "Enjoy!" : $scope.message = "Too much!";
       }
     };
   }
