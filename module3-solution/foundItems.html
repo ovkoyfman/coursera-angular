@@ -1,4 +1,4 @@
 <p id="message" ng-show="menu.found.length == 0">Nothing found</p>
-<ul>
-  <li ng-repeat="item in menu.found">Name: {{item.name}}. Short Name: ({{item.short_name}}). Description: {{item.description}}<button ng-click="onRemove({index: $index});" type="button">Don't want this one!</button></li>
+<table class="table table-hover">
+  <tr ng-repeat="item in menu.found"><td>Name: {{item.name}}. Short Name: ({{item.short_name}}). Description:{{item.description}}</td><td><button ng-click="onRemove({index: $index});" type="button">Don't want this one!</button></td></li>
 </ul>

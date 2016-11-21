@@ -29,7 +29,6 @@ function NarrowItDownController(MenuSearchService){
   };
   controller.getResults = function(){
     foundItems = [];
-    controller.found = 0;
     if (controller.searchItem !=""){
       var promice = MenuSearchService.getMatchedMenuItems();
       promice.then(function (result) {

@@ -5,8 +5,14 @@ input[type="text"] {
   width: 200px;
   float: left;
 }
+.description{
+  color: #337AB7;
+}
 ul {
   clear: left;
+  list-style-type: none;
+  margin-left: -20px;
+  padding-left: 0px;
 }
 .narrow-button {
   float: left;
